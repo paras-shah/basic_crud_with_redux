@@ -1,0 +1,46 @@
+{
+  "streams": [
+    {
+      "title": "Title",
+      "description": "Desc",
+      "userID": "110793274641080992654",
+      "id": 1
+    },
+    {
+      "title": "Title 2",
+      "description": "Desc",
+      "userID": "110793274641080992654",
+      "id": 2
+    },
+    {
+      "title": "New Stream Title",
+      "description": "Here is something new.",
+      "userID": "107978244476936407292",
+      "id": 3
+    },
+    {
+      "title": "Another users Stream 2",
+      "description": "great stream",
+      "userID": "107978244476936407292",
+      "id": 4
+    },
+    {
+      "title": "new title",
+      "description": "asdasd",
+      "userID": "107978244476936407292",
+      "id": 5
+    },
+    {
+      "userID": "107978244476936407292",
+      "title": "AS-150: Added new files",
+      "description": "Huge description about stream",
+      "id": 6
+    },
+    {
+      "description": "Patch description ",
+      "title": "With Patch Stream updated",
+      "userID": "107978244476936407292",
+      "id": 7
+    }
+  ]
+}

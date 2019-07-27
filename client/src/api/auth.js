@@ -62,8 +62,8 @@ const mapStateToProps = ({ auth }) => {
 
 const mapDispatchToActions = dispatch => {
   return {
-    signInAction: function() {
-      dispatch(signInAction());
+    signInAction: function(userID) {
+      dispatch(signInAction(userID));
     },
     signOutAction: function() {
       dispatch(signOutAction());
