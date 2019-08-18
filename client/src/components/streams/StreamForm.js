@@ -55,7 +55,7 @@ const validateForm = formValues => {
   }
 
   if (!formValues.description) {
-    errors.description = 'Please enter a desc';
+    errors.description = 'Please enter a description';
   }
   return errors;
 };

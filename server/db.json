@@ -2,15 +2,9 @@
   "streams": [
     {
       "title": "Title",
-      "description": "Desc",
+      "description": "Desc Please provide a bit detial",
       "userID": "110793274641080992654",
       "id": 1
-    },
-    {
-      "title": "Title 2",
-      "description": "Desc",
-      "userID": "110793274641080992654",
-      "id": 2
     },
     {
       "title": "New Stream Title",

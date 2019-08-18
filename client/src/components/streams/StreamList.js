@@ -14,7 +14,10 @@ class StreamList extends React.Component {
         <Link className="ui button primary" to={`/streams/edit/${stream.id}`}>
           Edit
         </Link>
-        <Link className="ui button negative" to="">
+        <Link
+          className="ui button negative"
+          to={`/streams/delete/${stream.id}`}
+        >
           Delete
         </Link>
       </div>
@@ -23,16 +26,19 @@ class StreamList extends React.Component {
 
   renderList = () => {
     const streamList = this.props.streams.map(stream => {
-      return (
-        <div className="item" key={stream.id}>
-          {stream.userID === this.props.userID ? this.showOptions(stream) : ''}
-          <i className="large middle aligned icon camera" />
-          <div className="content">
-            {stream.title}
-            <div className="description">{stream.description}</div>
+      if (stream)
+        return (
+          <div className="item" key={stream.id}>
+            {stream.userID === this.props.userID
+              ? this.showOptions(stream)
+              : ''}
+            <i className="large middle aligned icon camera" />
+            <div className="content">
+              {stream.title}
+              <div className="description">{stream.description}</div>
+            </div>
           </div>
-        </div>
-      );
+        );
     });
     return streamList;
   };
@@ -52,7 +58,7 @@ class StreamList extends React.Component {
 
   render() {
     if (!this.props.streams.length) return null;
-
+    console.log(this.props.streams);
     return (
       <>
         <h2>List of Streams </h2>
