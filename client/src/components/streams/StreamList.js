@@ -39,6 +39,7 @@ class StreamList extends React.Component {
             </div>
           </div>
         );
+      else return null;
     });
     return streamList;
   };
@@ -58,7 +59,6 @@ class StreamList extends React.Component {
 
   render() {
     if (!this.props.streams.length) return null;
-    console.log(this.props.streams);
     return (
       <>
         <h2>List of Streams </h2>
